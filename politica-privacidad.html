@@ -89,8 +89,8 @@
 
         <h2>1. Responsable del tratamiento</h2>
         <table>
-          <tr><th>Responsable</th><td>[RAZÓN SOCIAL O NOMBRE COMPLETO DEL TITULAR]</td></tr>
-          <tr><th>NIF / CIF</th><td>[NIF O CIF]</td></tr>
+          <tr><th>Responsable</th><td>Aleksandr Krokun</td></tr>
+          <tr><th>NIF</th><td>Y2742617L</td></tr>
           <tr><th>Domicilio</th><td>Avenida del Segura, 3 · 03390 Benejúzar (Alicante), España</td></tr>
           <tr><th>Teléfono</th><td>+34 693 461 811</td></tr>
           <tr><th>Correo electrónico</th><td>cochesbenejuzar@gmail.com</td></tr>
@@ -185,7 +185,9 @@
     <div class="stitch stitch--dark" aria-hidden="true"></div>
 
     <div class="footer__bar">
-      <span>© <span id="current-year">2026</span> Coches Benejúzar · <span data-i18n="foot.rights">All rights reserved.</span></span>
+      <div>
+        © <span id="spanYear"></span> Coches Benejúzar. All Rights Reserved.
+      </div>
       <nav aria-label="Legal">
         <a href="aviso-legal.html" data-i18n="foot.legal1">Legal notice</a>
         <a href="politica-privacidad.html" data-i18n="foot.legal2">Privacy policy</a>
@@ -194,6 +196,9 @@
     </div>
   </div>
 </footer>
+<script>
+document.getElementById("spanYear").textContent = new Date().getFullYear();
+</script>
 
 <!-- Botón flotante de WhatsApp -->
 <a class="wa" href="https://wa.me/34693461811" data-i18n-href="wa.url"

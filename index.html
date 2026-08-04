@@ -64,6 +64,16 @@
   }]
 }
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SE4PHG2ELL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SE4PHG2ELL');
+</script>
+
 </head>
 
 <body>
@@ -342,10 +352,7 @@
 
       <!-- Contadores. Edita data-count para cambiar las cifras. -->
       <div class="stats reveal">
-        <div class="stat">
-          <div class="figure stat__val"><span data-count="10">10</span><small>+</small></div>
-          <div class="stat__key" data-i18n="stat1">Years on convertibles</div>
-        </div>
+
         <div class="stat">
           <div class="figure stat__val"><span data-count="4">4</span></div>
           <div class="stat__key" data-i18n="stat2">Cabrio disciplines in-house</div>
@@ -355,7 +362,7 @@
           <div class="stat__key" data-i18n="stat3">Languages we work in</div>
         </div>
         <div class="stat">
-          <div class="figure stat__val"><span data-count="24">24</span></div>
+          <div class="figure stat__val"><span data-count="12">12</span></div>
           <div class="stat__key" data-i18n="stat4">Months of warranty</div>
         </div>
       </div>
@@ -408,7 +415,7 @@
       <div class="sec-head">
         <div class="reveal">
           <p class="eyebrow" data-i18n="gal.eyebrow">Recent work</p>
-          <h2 data-i18n="gal.title">Before is a leak. After is a roof.</h2>
+          <h2 data-i18n="gal.title">No leaks. Just a reliable roof.</h2>
         </div>
         <p class="lead reveal" data-i18n="gal.lead">A selection from the workshop.</p>
       </div>
@@ -629,7 +636,9 @@
     <div class="stitch stitch--dark" aria-hidden="true"></div>
 
     <div class="footer__bar">
-      <span>© <span id="current-year">2026</span> Coches Benejúzar · <span data-i18n="foot.rights">All rights reserved.</span></span>
+      <div>
+        © <span id="spanYear"></span> Coches Benejúzar. All Rights Reserved.
+      </div>
       <nav aria-label="Legal">
         <a href="aviso-legal.html" data-i18n="foot.legal1">Legal notice</a>
         <a href="politica-privacidad.html" data-i18n="foot.legal2">Privacy policy</a>
@@ -638,6 +647,9 @@
     </div>
   </div>
 </footer>
+<script>
+document.getElementById("spanYear").textContent = new Date().getFullYear();
+</script>
 
 <!-- ==================================================================
      LIGHTBOX DE GALERÍA
