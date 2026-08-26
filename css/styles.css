@@ -1313,6 +1313,24 @@ p:last-child { margin-bottom: 0; }
   color: var(--steel);
 }
 .footer__bar nav { display: flex; flex-wrap: wrap; gap: 12px 22px; }
+.social-links { display: flex; gap: 16px; }
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--edge-dark);
+  color: var(--silver);
+  transition: all .3s var(--ease);
+}
+.social-links a:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  background: rgba(0, 242, 254, .1);
+}
+.social-links svg { width: 20px; height: 20px; }
 
 /* ==========================================================================
    15. BOTÓN FLOTANTE DE WHATSAPP
