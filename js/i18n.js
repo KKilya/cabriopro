@@ -788,6 +788,13 @@
   const DEFAULT_LANG = "en";
 
   function pickInitialLang() {
+    // Páginas estáticas por idioma (/es/, /ru/) fijan este valor antes de
+    // cargar el script para que la URL mande siempre, y no la localStorage
+    // de una visita anterior ni el idioma del navegador (ver SEO_NOTES.md).
+    if (window.CABRIO_LOCKED_LANG && SUPPORTED.indexOf(window.CABRIO_LOCKED_LANG) !== -1) {
+      return window.CABRIO_LOCKED_LANG;
+    }
+
     let stored = null;
     try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) { /* modo privado */ }
     if (stored && SUPPORTED.indexOf(stored) !== -1) return stored;
@@ -847,6 +854,11 @@
     apply(pickInitialLang());
     document.querySelectorAll(".lang__btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
+        // Si el botón lleva data-href, navega a la página estática de ese
+        // idioma (/es/, /ru/) en vez de solo cambiar el texto en el sitio,
+        // para que Google indexe una URL real por idioma.
+        const href = btn.getAttribute("data-href");
+        if (href) { window.location.href = href; return; }
         apply(btn.getAttribute("data-lang"));
       });
     });
