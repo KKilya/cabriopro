@@ -167,7 +167,7 @@
       "ct.f.o5": "Something else",
       "ct.f.msg": "What is the roof doing?",
       "ct.f.msg.ph": "It stops halfway and the pump keeps running...",
-      "ct.f.consent": "I have read the <a href=\"politica-privacidad.html\">privacy policy</a> and agree to be contacted about this enquiry.",
+      "ct.f.consent": "I have read the <a href=\"/politica-privacidad.html\">privacy policy</a> and agree to be contacted about this enquiry.",
       "ct.f.send": "Send enquiry",
       "ct.f.note": "We reply the same working day. Nothing is shared with third parties.",
       "ct.f.ok": "Thanks — your enquiry is ready to send from your email app.",
@@ -181,6 +181,7 @@
 
       "foot.about": "Convertible roof specialists in Benejúzar, Alicante. Repair, replacement and maintenance of soft tops, mechanisms and cabrio interiors.",
       "foot.nav": "Navigate",
+      "foot.home": "Home",
       "foot.svc": "Services",
       "foot.contact": "Contact",
       "foot.legal": "Legal",
@@ -195,7 +196,7 @@
       "wa.url": "https://wa.me/34693461811?text=Hello%2C%20I%20have%20a%20question%20about%20my%20convertible%20roof.%20My%20car%20is%3A%20",
 
       "ck.title": "Cookies, briefly",
-      "ck.text": "We use our own cookies to keep the site working and to remember your language. Nothing is used for advertising. See the <a href=\"politica-cookies.html\">cookie policy</a>.",
+      "ck.text": "We use our own cookies to keep the site working and to remember your language. Nothing is used for advertising. See the <a href=\"/politica-cookies.html\">cookie policy</a>.",
       "ck.accept": "Accept",
       "ck.reject": "Only essential",
 
@@ -422,7 +423,7 @@
       "ct.f.o5": "Otra cosa",
       "ct.f.msg": "¿Qué hace la capota?",
       "ct.f.msg.ph": "Se para a medio camino y la bomba sigue funcionando...",
-      "ct.f.consent": "He leído la <a href=\"politica-privacidad.html\">política de privacidad</a> y acepto que me contactéis por esta consulta.",
+      "ct.f.consent": "He leído la <a href=\"/politica-privacidad.html\">política de privacidad</a> y acepto que me contactéis por esta consulta.",
       "ct.f.send": "Enviar consulta",
       "ct.f.note": "Respondemos el mismo día laborable. No cedemos datos a terceros.",
       "ct.f.ok": "Gracias: tu consulta está lista para enviarse desde tu aplicación de correo.",
@@ -436,6 +437,7 @@
 
       "foot.about": "Especialistas en capotas de descapotable en Benejúzar, Alicante. Reparación, sustitución y mantenimiento de capotas, mecanismos e interiores cabrio.",
       "foot.nav": "Navegación",
+      "foot.home": "Inicio",
       "foot.svc": "Servicios",
       "foot.contact": "Contacto",
       "foot.legal": "Legal",
@@ -450,7 +452,7 @@
       "wa.url": "https://wa.me/34693461811?text=Hola%2C%20tengo%20una%20consulta%20sobre%20la%20capota%20de%20mi%20descapotable.%20Mi%20coche%20es%3A%20",
 
       "ck.title": "Cookies, en corto",
-      "ck.text": "Usamos cookies propias para que la web funcione y para recordar tu idioma. Ninguna se usa para publicidad. Consulta la <a href=\"politica-cookies.html\">política de cookies</a>.",
+      "ck.text": "Usamos cookies propias para que la web funcione y para recordar tu idioma. Ninguna se usa para publicidad. Consulta la <a href=\"/politica-cookies.html\">política de cookies</a>.",
       "ck.accept": "Aceptar",
       "ck.reject": "Solo esenciales",
 
@@ -673,7 +675,7 @@
       "ct.f.o5": "Другое",
       "ct.f.msg": "Что происходит с крышей?",
       "ct.f.msg.ph": "Останавливается на полпути, насос продолжает работать...",
-      "ct.f.consent": "Я прочитал(а) <a href=\"politica-privacidad.html\">политику конфиденциальности</a> и согласен(на) на обратную связь по этому обращению.",
+      "ct.f.consent": "Я прочитал(а) <a href=\"/politica-privacidad.html\">политику конфиденциальности</a> и согласен(на) на обратную связь по этому обращению.",
       "ct.f.send": "Отправить обращение",
       "ct.f.note": "Отвечаем в тот же рабочий день. Данные третьим лицам не передаём.",
       "ct.f.ok": "Спасибо — обращение готово к отправке из вашей почтовой программы.",
@@ -687,6 +689,7 @@
 
       "foot.about": "Специалисты по крышам кабриолетов в Бенехусаре, Аликанте. Ремонт, замена и обслуживание тентов, механизмов и салонов кабриолетов.",
       "foot.nav": "Навигация",
+      "foot.home": "Главная",
       "foot.svc": "Услуги",
       "foot.contact": "Контакты",
       "foot.legal": "Правовое",
@@ -701,7 +704,7 @@
       "wa.url": "https://wa.me/34693461811?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D1%83%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D0%BA%D1%80%D1%8B%D1%88%D0%B5%20%D0%BA%D0%B0%D0%B1%D1%80%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%B0.%20%D0%9C%D0%BE%D1%8F%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%3A%20",
 
       "ck.title": "Коротко о cookie",
-      "ck.text": "Мы используем собственные cookie, чтобы сайт работал и запоминал ваш язык. Для рекламы они не применяются. См. <a href=\"politica-cookies.html\">политику cookie</a>.",
+      "ck.text": "Мы используем собственные cookie, чтобы сайт работал и запоминал ваш язык. Для рекламы они не применяются. См. <a href=\"/politica-cookies.html\">политику cookie</a>.",
       "ck.accept": "Принять",
       "ck.reject": "Только необходимые",
 
