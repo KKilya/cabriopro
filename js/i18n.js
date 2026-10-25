@@ -860,8 +860,14 @@
         // Si el botón lleva data-href, navega a la página estática de ese
         // idioma (/es/, /ru/) en vez de solo cambiar el texto en el sitio,
         // para que Google indexe una URL real por idioma.
+        // Se guarda el idioma elegido antes de navegar; si no, al volver a la
+        // página en inglés la localStorage de /es/ o /ru/ reaplicaba ese idioma.
         const href = btn.getAttribute("data-href");
-        if (href) { window.location.href = href; return; }
+        if (href) {
+          try { localStorage.setItem(STORAGE_KEY, btn.getAttribute("data-lang")); } catch (e) { /* ignorar */ }
+          window.location.href = href;
+          return;
+        }
         apply(btn.getAttribute("data-lang"));
       });
     });

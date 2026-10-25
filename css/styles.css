@@ -442,7 +442,12 @@ p:last-child { margin-bottom: 0; }
   opacity: .65;
   transition: background-color .3s var(--ease), color .3s var(--ease), opacity .3s var(--ease);
 }
-.lang__btn:hover { opacity: 1; }
+@media (hover: hover) { .lang__btn:hover { opacity: 1; } }
+/* Táctil: sin retardo de doble toque y zona de pulsación de 44px de alto en móvil */
+.lang__btn { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+@media (max-width: 1039px) {
+  .lang__btn { min-height: 44px; padding: 12px 8px; margin: -8px 0; }
+}
 .lang__btn.is-active {
   background: var(--accent-grad);
   color: var(--ink);
