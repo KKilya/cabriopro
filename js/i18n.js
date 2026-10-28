@@ -853,7 +853,25 @@
     document.dispatchEvent(new CustomEvent("cabrio:langchange", { detail: { lang: lang } }));
   }
 
+  // Primera visita a una página en inglés con el navegador en español o ruso:
+  // se va a la versión de ese idioma (/es/, /ru/). Solo si nunca se ha elegido
+  // idioma; si se pulsa EN después, se respeta. Sin localStorage (modo
+  // privado) no se redirige, para no impedir llegar a la versión en inglés.
+  function redirectFirstVisit() {
+    if (window.CABRIO_LOCKED_LANG !== "en") return false;
+    let stored;
+    try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) { return false; }
+    if (stored) return false;
+    const nav = (navigator.language || "").slice(0, 2).toLowerCase();
+    const btn = document.querySelector('.lang__btn[data-lang="' + nav + '"][data-href]');
+    if (!btn) return false;
+    try { localStorage.setItem(STORAGE_KEY, nav); } catch (e) { return false; }
+    window.location.replace(btn.getAttribute("data-href"));
+    return true;
+  }
+
   function init() {
+    if (redirectFirstVisit()) return;
     apply(pickInitialLang());
     document.querySelectorAll(".lang__btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
