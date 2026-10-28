@@ -481,6 +481,26 @@ p:last-child { margin-bottom: 0; }
 .burger.is-open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .burger.is-open span:nth-child(2) { opacity: 0; }
 .burger.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.burger { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+
+/* En móvil la barra no cambia de alto al hacer scroll: si se encoge mientras
+   se pulsa, los botones se mueven bajo el dedo y el toque se pierde */
+@media (max-width: 1039px) {
+  .nav.is-solid { height: var(--nav-h); }
+}
+/* Móviles estrechos (≤400px): la marca, el idioma y la hamburguesa no cabían
+   y la hamburguesa quedaba medio fuera de la pantalla */
+@media (max-width: 400px) {
+  .nav__inner { gap: 10px; }
+  .brand { gap: 8px; min-width: 0; }
+  .brand__mark { width: 34px; height: 34px; flex-shrink: 0; }
+  .nav__side { gap: 8px; flex-shrink: 0; }
+  .lang { padding: 2px; }
+  .lang__btn { padding-inline: 6px; }
+}
+@media (max-width: 350px) {
+  .brand__sub { display: none; }
+}
 
 /* --- Panel móvil --- */
 .mobile {
