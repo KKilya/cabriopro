@@ -1358,6 +1358,16 @@ p:last-child { margin-bottom: 0; }
 .social-links svg { width: 20px; height: 20px; }
 
 /* ==========================================================================
+   VÍDEO POR WHATSAPP, MODELOS Y ZONAS
+   ========================================================================== */
+.btn--wa { background: #25d366; color: #fff; display: inline-flex; align-items: center; justify-content: center; gap: 10px; }
+.btn--wa:hover { background: #1ebe5a; }
+.btn--wa svg { flex-shrink: 0; }
+.chips { list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.chips li { padding: 8px 14px; border: 1px solid var(--edge-light); border-radius: var(--radius); font-family: var(--font-mono); font-size: .78rem; color: var(--ink); background: var(--paper); }
+.chips__note { margin-top: 24px; color: var(--slate); }
+
+/* ==========================================================================
    15. BOTÓN FLOTANTE DE WHATSAPP
    ========================================================================== */
 .wa {
